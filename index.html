@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My_paint</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="container">
+     <h1>My_paint</h1>
+     <div id = "tool">
+        
+            <label>
+                Choisir une couleur :
+            </label>
+            <input id="color" type="color">
+            <label> 
+                Choisir une taille :  
+            </label>  
+
+            <input name="size" id="size" type="text" placeholder="Default : 1px">
+            <button id="crayon" name="crayon"><p><span class="glyphicon glyphicon-pencil"></span></p>    </button>
+            <button id="rect" name="rect"><span class="glyphicon glyphicon-unchecked"></span></button>
+            <button id="rectA" name="rectA"><span class="glyphicon glyphicon-stop"></span></button>
+            <button id="trait" name="trait"><span class="glyphicon glyphicon-minus"></button>
+            <button id="cercle" name="cercle"><img src='images/circle.png' alt="cercle"></button>
+            <button id="cercleA" name="cercleA"><img src='images/circleA.png' alt="cercle rempli"></button>
+            <button id="texte" name="texte"><span class="glyphicon glyphicon-text-height"></button>
+             <button id="gomme" name ="gomme" class="btn btn-inverse btn-medium" value="gomme" data-tool="gomme"><i class="icon-eraser"></i></button>
+            <div id="inputTEXT">
+                <input type="text" name="text" id="valueTEXT">
+                <input type="text" name="sizeText" id="sizeTEXT" placeholder="taille du texte">
+               
+                <a href="#" id="back"></a>
+            </div>
+            <a href="#" id="clear" title="clear">Effacer</a> 
+       
+         <select id="fontTEXT">
+                    <option value="arial" selected="selected">Arial</option>
+                    <option value="verdana">Verdana</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="serif">Serif</option>
+                    <option value="sans-serif">Sans-Serif</option>
+                </select>
+                <a id="download">Telecharger</a>  
+     <button><input type='file' name='img' size='65' id='uploadimage' /></button>
+       </div> 
+       
+        <div id="all">
+            <canvas id="canvas" width="1200" height="800"></canvas>
+        </div>
+     </div>              
+
+
+    
+    <script type="text/javascript" src="paint.js"></script>
+    </body>
+</html>

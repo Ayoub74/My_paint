@@ -1,0 +1,83 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+.clear
+{
+	clear: both;
+}
+body{
+	 background-image: url("images/font.jpg");
+	width: 50%;
+	margin: auto;
+}
+h1{
+	font-size: 100px;
+	text-align: center;
+}
+canvas{
+	width: 1200px;
+	height: 800px;
+	border: solid 1px;
+	background-color: white;
+	float: left;
+	cursor: pointer;
+}
+input, label, a{
+	display: block;
+}
+#inputTEXT{
+	display: none;
+}
+#all{
+	float: left;
+	margin-top: -300px;
+}
+#fontTEXT{
+	display: block;
+}
+#back{
+	float: right;
+	border-bottom: 1px;
+}
+aside{
+	float: left;
+	max-width: 30%;
+	margin-left: 20px;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+#color, #clear {
+	margin-top: 5px;
+}
+#size{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+#tool{
+	width: 400px;
+	height: 300px;
+	margin-left: -400px;
+	padding-top: 80px;
+
+
+}
